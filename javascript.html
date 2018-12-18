@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript Elements!</title>
+  </head>
+  <body>
+    <h1>Stuff with Javascript</h1>
+    <br>
+    <br>
+    <form>
+      Who are you?
+      <select id="classes">
+        <option>Teacher</option>
+        <option>Student</option>
+        <option>Homeless Bum</option>
+        <option>Thanos Car</option>
+      </select>
+    </form>
+    <br>
+    <p>Enter your name</p>
+    <input id="name">
+    <button onclick="helloName()">Click me!</button>
+    <p id="demo"></p>
+    <br>
+    <button onclick="showAlert()">Click here for your news alert</button>
+    <br>
+    <br>
+    <button onclick="idiotTest()">Click here to take the idiot test</button>
+    <br>
+    <br>
+    <button onclick="newPage()">Click for new page</button>
+    <br>
+    <!-- <br>
+    <button onclick="getHacked">Click to download more ram!!</button>
+    <br> -->
+    <br>
+    <button onclick="showCat()">click for cat</button>
+    <script>
+      prompt("Tell us your name so we can have the Russians hack your Facebook acount.");
+      function showCat() {
+        var x = document.createElement("IMG");
+        x.setAttribute("src", "cat.jpg");
+        document.body.appendChild(x);
+      }
+      function helloName() {
+        var name = document.getElementById("name").value;
+        var text = "Hallo, " + name + "! Hab einen guten Tag!";
+        document.getElementById("demo").innerHTML = text;
+      }
+      function showAlert() {
+        alert("You've been gnomed");
+        var x = document.createElement("IMG");
+        x.setAttribute("src", "gnome.jpg");
+        document.body.appendChild(x);
+      }
+      function newPage() {
+        window.location.assign("spiderman-page.html");
+      }
+      function idiotTest() {
+        if (confirm("Does Broscius play good Christmas music?")) {
+          alert("ur wrong its trash");
+        }
+        else {
+          alert("u rite lol");
+        }
+      }
+    </script>
+  </body>
+</html>
